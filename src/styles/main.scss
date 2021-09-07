@@ -6,12 +6,20 @@
 @import
 './variables';
 
-body{
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
   font-size: 15px;
   font-weight: 300;
   background-color: var(--white);
   font-family: var(--main-font);
+  font-display: swap;
   color: var(--text);
+  height: 100%;
 }
 h1, h2, h3, h4, h5, h6{
   font-weight: 300;

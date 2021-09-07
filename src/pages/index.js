@@ -1,24 +1,22 @@
 import React from "react"
+import Layout from "../components/layout/layout";
+import Container from "../components/layout/container";
+import ContainerFull from "../components/layout/container-full";
 import Seo from "../components/Seo"
+import Footer from "../components/footer";
 
 const Home = ( ) =>{
   return (
-    <div>
-      {/* <Seo/> */}
-      <section id="hero" className="hero">
-        <video autoplay="" loop="" id="hero-video">
-          <source src="/static/media/car_balloon.8609609c.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video.
-        </video>
-          <section className="title">
-            <h1 className="mb-n1">Welcome to the <span className="bad">BAD</span></h1>
-            <em>Great things are coming!</em>
-          </section>
-          <p className="linkedin-link">
-            <a href="https://www.linkedin.com/in/the-ba-d/?utm_source=linkedin&amp;utm_medium=link&amp;utm_campaign=linkedinLogo"></a>
-          </p>
-      </section>
-    </div>
+    <Layout className="">
+      <Seo />
+      <Container className="text-center">
+        <h1>Hello there!</h1>
+      </Container>
+      <ContainerFull className="text-center">
+        <h1>Hello there!</h1>
+      </ContainerFull>
+      <Footer />
+    </Layout>
   )
 }
 
