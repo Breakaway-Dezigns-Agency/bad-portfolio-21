@@ -1,11 +1,11 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import TopNav from "./nav/nav-top"
+import SimpleNav from './nav/simple-nav'
 
 const Header = ({ siteTitle }) => {
   return(
     <header>
-      <TopNav/>
+      <SimpleNav />
     </header>
   )
 }

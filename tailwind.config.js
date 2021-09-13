@@ -16,9 +16,20 @@ module.exports = {
         marker: ["Permanent Marker", 'cursive']
       },
       colors: {
-        blue: "#4DAABF",
+        blue: {
+          soft: '#C1E1E9',
+          DEFAULT: '#4169E1',
+          deep: '#2C3E50'
+        },
         gray: "#605459",
+        black: {
+          DEFAULT: '#000',
+          soft: '#333'
+        },
       },
+      animation:{
+        'spin-slow': 'spin 20s linear infinite',
+      }
     },
   },
   variants: {

@@ -9,6 +9,7 @@ const Sticky = ({ children }) =>{
   useEffect(() => {
     function onScroll() {
       let currentPosition = window.pageYOffset;
+      console.log(scrollTop);
       if (currentPosition > scrollTop) {
         setScrolling(false);
       } else {
@@ -24,7 +25,7 @@ const Sticky = ({ children }) =>{
     if (scrollTop >= stick){
       mobileNav.classList.add('sticky')
     }
-    if(scrollTop <= 168){
+    if(scrollTop <= 100){
       mobileNav.classList.remove('sticky')
     }
 

@@ -1,0 +1,20 @@
+nav{
+  position: relative;
+  .logo{
+    span{
+      font-family: var(--title-font);
+      color: var(--white);
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+  }
+  .sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .primary-nav{
+      background-color: var(--blue-deep);
+    }
+  }
+}

@@ -1,14 +1,16 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import UniversalLink from './utils/universal-link'
+// import { Link } from 'gatsby'
+// import UniversalLink from './utils/universal-link'
 import PropTypes from 'prop-types'
 
 
 const Footer = () => {
 
   return(
-    <footer className={`max-w-7xl py-10`}>
-
+    <footer className={`py-5 bg-black-soft`}>
+      <div class="footer-content text-center text-white">
+        <h6>breakaway dezign agency © 2021</h6>
+      </div>
     </footer>
   )
 }

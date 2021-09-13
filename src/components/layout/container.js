@@ -4,9 +4,9 @@ import PropTypes from "prop-types"
 const Container = ({ className, children }) => {
 
   return (
-    <section className={`max-w-7xl mx-auto p-5 ${className !== '' ? className : ''}`}>
+    <div className={`max-w-7xl mx-auto p-5 ${className !== '' ? className : ''}`}>
       {children}
-    </section>
+    </div>
   )
 }
 
