@@ -43,6 +43,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `font Montserrat`,
+        path: `${__dirname}/src/styles/vendor/fonts/Montserrat`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `font Marker`,
+        path: `${__dirname}/src/styles/vendor/fonts/Permanent_Marker`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extension: [`.md`, `.mdx`],
