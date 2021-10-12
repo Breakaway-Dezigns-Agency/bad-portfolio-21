@@ -1,15 +1,25 @@
 import React from "react"
-import Layout from "../components/layout/layout";
-import Container from "../components/layout/container";
-import ContainerFull from "../components/layout/container-full";
+import Layout from "../components/layout/layout"
+import Container from "../components/layout/container"
+import ContainerFull from "../components/layout/container-full"
 import Seo from "../components/Seo"
-import Footer from "../components/footer";
-import VideoTag from "../components/utils/video-tag";
+import Footer from "../components/footer"
+import VideoTag from "../components/utils/video-tag"
+import UniversalLink from "../components/utils/universal-link"
+import CardWrap from "../components/utils/card-wrap"
+import CardImage from "../components/utils/cards/card-image"
+import CardBody from "../components/utils/cards/card-body"
+import CardContent from "../components/utils/cards/card-content"
 
 import floatSvg from "../images/dots_updated.svg"
 import animLogoFront from "../images/bad-front-logo.png"
 import animLogoBack from "../images/bad-back-logo.png"
 import heroVid from "../videos/hero_vid.mp4"
+
+import cardImgOne from "../images/cards/halfmoon-logo.jpg"
+import cardImgTwo from "../images/cards/twist-n-shout-logo.jpg"
+import cardImgThree from "../images/cards/lulyboo-logo.jpg"
+import cardImgFour from "../images/cards/email-logo.jpg"
 
 const Home = ( ) =>{
   return (
@@ -66,19 +76,72 @@ const Home = ( ) =>{
         </div>
       </ContainerFull>
       <ContainerFull className="sites-wrap bg-blue-deep">
-        <Container className="sites-content">
+        <Container className="sites-content px-10 pb-10">
           <div className="max-w-md mx-auto text-center text-white">
             <h2>websites</h2>
           </div>
+          <CardWrap>
+            <CardContent>
+              <CardImage imgSrc={cardImgOne} imgAlt="Half-Moon logo" />
+              <CardBody
+                cardTitle="Half Moon Resort"
+                cardtext="Full website built, with existing ASP .NET CMS, Custom CSS, javascript and jQuery for UI for all devices."
+                linkTar="_blank"
+                linkRel="norefferer"
+                linkUrl="https://www.halfmoon.com/"
+                linkText="Learn More"
+              />
+            </CardContent>
+            <div className="card-content rounded-xl">
+              <div className="card-image">
+                <img src={cardImgOne} alt="" />
+              </div>
+              <div className="card-text">
+                <div className="title"></div>
+                <div className="text"></div>
+                <UniversalLink className="link" target="_blank" rel="noreferrer" to="">Learn More</UniversalLink>
+              </div>
+            </div>
+            <div className="card-content rounded-xl">
+              <div className="card-image">
+                <img src={cardImgTwo} alt="Twist &amp; Shout logo" />
+              </div>
+              <div className="card-text">
+              <div className="title">Twist &amp; Shout Events</div>
+                <div className="text">Previous Wordpress site build migrated to Squarespace for a better UX for the client backend. Full build.</div>
+                <UniversalLink className="link" target="_blank" rel="noreferrer" to="https://www.halfmoon.com/">Learn More</UniversalLink>
+              </div>
+            </div>
+            <div className="card-content rounded-xl">
+              <div className="card-image">
+                <img src={cardImgThree} alt="Lulyboo logo" />
+              </div>
+              <div className="card-text">
+              <div className="title">Lulyboo</div>
+                <div className="text">Shopify website Liquid theme updates and maintenance.</div>
+                <UniversalLink className="link" target="_blank" rel="noreferrer" to="https://www.halfmoon.com/">Learn More</UniversalLink>
+              </div>
+            </div>
+            <div className="card-content rounded-xl">
+              <div className="card-image">
+                <img src={cardImgFour} alt="Email logo" />
+              </div>
+              <div className="card-text">
+              <div className="title">Email Templates</div>
+                <div className="text">Creation of email template with tables to accomodate Outlook, Gmail & Yahoo users. UI across tablet and mobile devices.</div>
+                <UniversalLink className="link" target="_blank" rel="noreferrer" to="https://www.halfmoon.com/">Learn More</UniversalLink>
+              </div>
+            </div>
+            </CardWrap>
         </Container>
       </ContainerFull>
-      <ContainerFull className="projects-wrap">
+      {/* <ContainerFull className="projects-wrap">
         <Container className="projects-content">
           <div className="max-w-md mx-auto text-center">
             <h2>in-works projects</h2>
           </div>
         </Container>
-      </ContainerFull>
+      </ContainerFull> */}
       <Footer />
     </Layout>
   )

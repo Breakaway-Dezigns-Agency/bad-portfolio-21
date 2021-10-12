@@ -62,6 +62,7 @@
       margin: 0 auto;
     }
     #skills{
+      position: relative;
       ul{
         display: flex;
         flex-direction: row;
@@ -78,6 +79,78 @@
             color: var(--blue);
             &:after{
               color: var(--blue);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sites-wrap{
+  position: relative;
+  @media(max-width:800){
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23e3e3e3' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
+  .cards-wrap{
+    .card-content{
+      position: relative;
+      overflow: hidden;
+      &:hover{
+        .card-image{
+          filter: grayscale(100%);
+        }
+        .card-text{
+          top: 0;
+        }
+      }
+      .card-text{
+        position: absolute;
+        top: -100%;
+        left: 0;
+        padding: 1rem;
+        height: 100%;
+        color: var(--white);
+        background-color: var(--black-700);
+        transition: .5s all ease-in-out;
+        .title, .text, .link{
+          margin-bottom: .5rem;
+        }
+        .title{
+          font-family: var(--title-font);
+          letter-spacing: 0.08rem;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        .text{
+
+        }
+        .link{
+          font-family: var(--title-font);
+          font-size: .7rem;
+          letter-spacing: .1rem;
+          display: block;
+          position: relative;
+          text-align: center;
+          text-transform: uppercase;
+          width: 100px;
+          margin: 0 auto;
+          transition: .5s all;
+          &:before{
+            content: '';
+            width: -webkit-fill-available;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0rem;
+            border-bottom: 3px solid var(--yellow);
+          }
+          &:hover{
+            color: var(--blue-deep);
+            width: 75%;
+            background-color: var(--yellow);
+            &:before{
+              bottom: -.2rem;
+              border-bottom: 3px solid var(--blue-soft);
             }
           }
         }

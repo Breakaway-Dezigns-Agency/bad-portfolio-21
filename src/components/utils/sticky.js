@@ -9,7 +9,7 @@ const Sticky = ({ children }) =>{
   useEffect(() => {
     function onScroll() {
       let currentPosition = window.pageYOffset;
-      console.log(scrollTop);
+      // console.log(scrollTop);
       if (currentPosition > scrollTop) {
         setScrolling(false);
       } else {

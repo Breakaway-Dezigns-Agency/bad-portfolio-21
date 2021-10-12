@@ -56,6 +56,14 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: 'gatsby-source-rest-api',
+      options: {
+        endpoints: [
+          'https://api.magicthegathering.io/v1/cards',
+        ],
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,

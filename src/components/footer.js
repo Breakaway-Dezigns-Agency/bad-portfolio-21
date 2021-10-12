@@ -8,7 +8,7 @@ const Footer = () => {
 
   return(
     <footer className={`py-5 bg-black-soft`}>
-      <div class="footer-content text-center text-white">
+      <div className="footer-content text-center text-white">
         <h6>breakaway dezign agency © 2021</h6>
       </div>
     </footer>
