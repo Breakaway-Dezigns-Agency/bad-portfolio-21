@@ -5,7 +5,7 @@ import ContainerFull from "../components/layout/container-full"
 import Seo from "../components/Seo"
 import Footer from "../components/footer"
 import VideoTag from "../components/utils/video-tag"
-import UniversalLink from "../components/utils/universal-link"
+// import UniversalLink from "../components/utils/universal-link"
 import CardWrap from "../components/utils/card-wrap"
 import CardImage from "../components/utils/cards/card-image"
 import CardBody from "../components/utils/cards/card-body"
@@ -20,6 +20,7 @@ import cardImgOne from "../images/cards/halfmoon-logo.jpg"
 import cardImgTwo from "../images/cards/twist-n-shout-logo.jpg"
 import cardImgThree from "../images/cards/lulyboo-logo.jpg"
 import cardImgFour from "../images/cards/email-logo.jpg"
+import cardImgFive from "../images/cards/idi-logo.jpg"
 
 const Home = ( ) =>{
   return (
@@ -92,47 +93,53 @@ const Home = ( ) =>{
                 linkText="Learn More"
               />
             </CardContent>
-            <div className="card-content rounded-xl">
-              <div className="card-image">
-                <img src={cardImgOne} alt="" />
-              </div>
-              <div className="card-text">
-                <div className="title"></div>
-                <div className="text"></div>
-                <UniversalLink className="link" target="_blank" rel="noreferrer" to="">Learn More</UniversalLink>
-              </div>
-            </div>
-            <div className="card-content rounded-xl">
-              <div className="card-image">
-                <img src={cardImgTwo} alt="Twist &amp; Shout logo" />
-              </div>
-              <div className="card-text">
-              <div className="title">Twist &amp; Shout Events</div>
-                <div className="text">Previous Wordpress site build migrated to Squarespace for a better UX for the client backend. Full build.</div>
-                <UniversalLink className="link" target="_blank" rel="noreferrer" to="https://www.halfmoon.com/">Learn More</UniversalLink>
-              </div>
-            </div>
-            <div className="card-content rounded-xl">
-              <div className="card-image">
-                <img src={cardImgThree} alt="Lulyboo logo" />
-              </div>
-              <div className="card-text">
-              <div className="title">Lulyboo</div>
-                <div className="text">Shopify website Liquid theme updates and maintenance.</div>
-                <UniversalLink className="link" target="_blank" rel="noreferrer" to="https://www.halfmoon.com/">Learn More</UniversalLink>
-              </div>
-            </div>
-            <div className="card-content rounded-xl">
-              <div className="card-image">
-                <img src={cardImgFour} alt="Email logo" />
-              </div>
-              <div className="card-text">
-              <div className="title">Email Templates</div>
-                <div className="text">Creation of email template with tables to accomodate Outlook, Gmail & Yahoo users. UI across tablet and mobile devices.</div>
-                <UniversalLink className="link" target="_blank" rel="noreferrer" to="https://www.halfmoon.com/">Learn More</UniversalLink>
-              </div>
-            </div>
-            </CardWrap>
+            <CardContent>
+              <CardImage imgSrc={cardImgTwo} imgAlt="Twist &amp; Shout logo" />
+              <CardBody
+                cardTitle="Twist &amp; Shout Events"
+                cardtext="Previous Wordpress site build migrated to Squarespace for a better UX for the client backend. Full build."
+                linkTar="_blank"
+                linkRel="norefferer"
+                linkUrl="https://twistandshoutevents.com/"
+                linkText="Learn More"
+              />
+            </CardContent>
+
+
+            <CardContent>
+              <CardImage imgSrc={cardImgThree} imgAlt="Lulyboo Logo" />
+              <CardBody
+                cardTitle="Lulyboo"
+                cardtext="Shopify website Liquid theme updates and maintenance."
+                linkTar="_blank"
+                linkRel="norefferer"
+                linkUrl="https://lulyboo.com/"
+                linkText="Learn More"
+              />
+            </CardContent>
+            <CardContent>
+              <CardImage imgSrc={cardImgFour} imgAlt="Email Logo" />
+              <CardBody
+                cardTitle="Email Templates"
+                cardtext="Creation of email template with tables to accomodate Outlook, Gmail & Yahoo users. UI across tablet and mobile devices."
+                linkTar="_blank"
+                linkRel="norefferer"
+                linkUrl="/emails/tides.html"
+                linkText="Learn More"
+              />
+            </CardContent>
+            <CardContent>
+              <CardImage imgSrc={cardImgFive} imgAlt="Illinois Derm Logo" />
+              <CardBody
+                cardTitle="Illinois Derm Inst"
+                cardtext="Coming Soon"
+                // linkTar="_blank"
+                // linkRel="norefferer"
+                // linkUrl="/emails/tides.html"
+                // linkText="Learn More"
+              />
+            </CardContent>
+          </CardWrap>
         </Container>
       </ContainerFull>
       {/* <ContainerFull className="projects-wrap">

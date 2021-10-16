@@ -6,7 +6,7 @@ const CardBody = ({cardTitle, cardtext, linkTar, linkRel, linkUrl, linkText}) =>
     <div className="card-text">
       <div className="title">{cardTitle}</div>
       <div className="text">{cardtext}</div>
-      <UniversalLink className="link" target={linkTar} rel={linkRel} to={linkUrl}>{linkText}</UniversalLink>
+      {!linkUrl?'':<UniversalLink className="link" target={linkTar} rel={linkRel} to={linkUrl}>{linkText}</UniversalLink>}
     </div>
   )
 }
