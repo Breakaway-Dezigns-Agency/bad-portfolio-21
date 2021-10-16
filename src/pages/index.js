@@ -124,7 +124,7 @@ const Home = ( ) =>{
                 cardtext="Creation of email template with tables to accomodate Outlook, Gmail & Yahoo users. UI across tablet and mobile devices."
                 linkTar="_blank"
                 linkRel="norefferer"
-                linkUrl="/emails/tides.html"
+                linkUrl="https://breakawaydezign.com/emails/tides.html"
                 linkText="Learn More"
               />
             </CardContent>
