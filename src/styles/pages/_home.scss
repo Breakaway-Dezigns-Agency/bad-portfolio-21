@@ -25,6 +25,23 @@
       text-transform: uppercase;
     }
   }
+  .linked{
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translate(-50%, -1rem);
+    background-color: var(--red);
+    padding: .5rem;
+    &:hover{
+      i{
+        color: var(--blue);
+      }
+    }
+    i{
+      color: var(--white);
+      font-size: 1rem;
+    }
+  }
 }
 .about-wrap{
   position: relative;

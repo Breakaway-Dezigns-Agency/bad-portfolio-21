@@ -37,6 +37,9 @@ const Home = ( ) =>{
           <div className="top">Welcome to the <span className="bad">bad</span></div>
           <div className="bot">&#123; great things are here! &#125;</div>
         </div>
+        <div class="linked rounded-full">
+          <a href="https://www.linkedin.com/in/the-ba-d/" target="_blank"><i class="icon-linkedin"></i></a>
+        </div>
       </ContainerFull>
       <ContainerFull className="about-wrap">
         <div id="float-1" style={{backgroundImage: `url(${floatSvg})`}}></div>
