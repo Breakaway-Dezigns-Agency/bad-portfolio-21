@@ -82,15 +82,15 @@ const Home = ( ) =>{
             <h2>websites</h2>
           </div>
           <CardWrap>
-            <CardContent>
-              <CardImage imgSrc={cardImgOne} imgAlt="Half-Moon logo" />
+          <CardContent>
+              <CardImage imgSrc={cardImgFive} imgAlt="Illinois Derm Logo" />
               <CardBody
-                cardTitle="Half Moon Resort"
-                cardtext="Full website built, with existing ASP .NET CMS, Custom CSS, javascript and jQuery for UI for all devices."
-                linkTar="_blank"
-                linkRel="norefferer"
-                linkUrl="https://www.halfmoon.com/"
-                linkText="Learn More"
+                cardTitle={`Illinois Dermatology Inst. Coming Soon`}
+                cardtext=""
+                // linkTar="_blank"
+                // linkRel="norefferer"
+                // linkUrl="/emails/tides.html"
+                // linkText="Learn More"
               />
             </CardContent>
             <CardContent>
@@ -104,8 +104,17 @@ const Home = ( ) =>{
                 linkText="Learn More"
               />
             </CardContent>
-
-
+            <CardContent>
+              <CardImage imgSrc={cardImgOne} imgAlt="Half-Moon logo" />
+              <CardBody
+                cardTitle="Half Moon Resort"
+                cardtext="Full website built, with existing ASP .NET CMS, Custom CSS, javascript and jQuery for UI for all devices."
+                linkTar="_blank"
+                linkRel="norefferer"
+                linkUrl="https://www.halfmoon.com/"
+                linkText="Learn More"
+              />
+            </CardContent>
             <CardContent>
               <CardImage imgSrc={cardImgThree} imgAlt="Lulyboo Logo" />
               <CardBody
@@ -126,17 +135,6 @@ const Home = ( ) =>{
                 linkRel="norefferer"
                 linkUrl="https://breakawaydezign.com/emails/tides.html"
                 linkText="Learn More"
-              />
-            </CardContent>
-            <CardContent>
-              <CardImage imgSrc={cardImgFive} imgAlt="Illinois Derm Logo" />
-              <CardBody
-                cardTitle="Illinois Derm Inst"
-                cardtext="Coming Soon"
-                // linkTar="_blank"
-                // linkRel="norefferer"
-                // linkUrl="/emails/tides.html"
-                // linkText="Learn More"
               />
             </CardContent>
           </CardWrap>

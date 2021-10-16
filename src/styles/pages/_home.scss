@@ -95,6 +95,7 @@
     .card-content{
       position: relative;
       overflow: hidden;
+      margin-bottom: 1rem;
       &:hover{
         .card-image{
           filter: grayscale(100%);
