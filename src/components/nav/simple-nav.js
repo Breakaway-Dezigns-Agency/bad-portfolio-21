@@ -27,7 +27,7 @@ const SimpleNav = () => {
                 src={logoUrl}
                 alt="my logo"
               /> */}
-              <span className="pl-1 mx-auto md:mx-0">&#123; breakaway dezign &#125;</span>
+              <span className="md:pl-1 mx-auto md:mx-0">&#123; breakaway dezign &#125;</span>
             </Link>
           </div>
         </div>
