@@ -1,9 +1,11 @@
 import React from 'react'
+import Img from 'gatsby-image'
 
 const CardImage = ({imgSrc, imgAlt}) => {
   return(
     <div className="card-image">
-      <img src={imgSrc} alt={imgAlt} />
+      <Img fluid={imgSrc} alt={imgAlt}/>
+      {/* <img src={imgSrc} alt={imgAlt} /> */}
     </div>
   )
 }

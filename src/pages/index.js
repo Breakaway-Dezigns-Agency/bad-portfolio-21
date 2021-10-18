@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+// import Img from "gatsby-image"
 import Layout from "../components/layout/layout"
 import Container from "../components/layout/container"
 import ContainerFull from "../components/layout/container-full"
@@ -16,13 +18,10 @@ import animLogoFront from "../images/bad-front-logo.png"
 import animLogoBack from "../images/bad-back-logo.png"
 import heroVid from "../videos/hero_vid.mp4"
 
-import cardImgOne from "../images/cards/halfmoon-logo.jpg"
-import cardImgTwo from "../images/cards/twist-n-shout-logo.jpg"
-import cardImgThree from "../images/cards/lulyboo-logo.jpg"
-import cardImgFour from "../images/cards/email-logo.jpg"
-import cardImgFive from "../images/cards/idi-logo.jpg"
+const Home = ({ data }) =>{
+  const cardsArr = data.allFile.nodes
 
-const Home = ( ) =>{
+  // console.log(cardsArr[0].childImageSharp.fluid);
   return (
     <Layout className="homepage-wrap">
       <Seo />
@@ -37,8 +36,8 @@ const Home = ( ) =>{
           <div className="top">Welcome to the <span className="bad">bad</span></div>
           <div className="bot">&#123; great things are here! &#125;</div>
         </div>
-        <div class="linked rounded-full">
-          <a href="https://www.linkedin.com/in/the-ba-d/" target="_blank"><i class="icon-linkedin"></i></a>
+        <div className="linked rounded-full">
+          <a href="https://www.linkedin.com/in/the-ba-d/" target="_blank"><i className="icon-linkedin"></i></a>
         </div>
       </ContainerFull>
       <ContainerFull className="about-wrap">
@@ -86,56 +85,56 @@ const Home = ( ) =>{
           </div>
           <CardWrap>
           <CardContent>
-              <CardImage imgSrc={cardImgFive} imgAlt="Illinois Derm Logo" />
+              <CardImage imgSrc={cardsArr[1].childImageSharp.fluid} imgAlt="Illinois Derm Logo" />
               <CardBody
                 cardTitle={`Illinois Dermatology Inst. Coming Soon`}
                 cardtext=""
                 // linkTar="_blank"
-                // linkRel="norefferer"
+                // linkRel="noreferrer"
                 // linkUrl="/emails/tides.html"
                 // linkText="Learn More"
               />
             </CardContent>
             <CardContent>
-              <CardImage imgSrc={cardImgTwo} imgAlt="Twist &amp; Shout logo" />
+              <CardImage imgSrc={cardsArr[3].childImageSharp.fluid} imgAlt="Twist &amp; Shout logo" />
               <CardBody
                 cardTitle="Twist &amp; Shout Events"
                 cardtext="Previous Wordpress site build migrated to Squarespace for a better UX for the client backend. Full build."
                 linkTar="_blank"
-                linkRel="norefferer"
+                linkRel="noreferrer"
                 linkUrl="https://twistandshoutevents.com/"
                 linkText="Learn More"
               />
             </CardContent>
             <CardContent>
-              <CardImage imgSrc={cardImgOne} imgAlt="Half-Moon logo" />
+              <CardImage imgSrc={cardsArr[4].childImageSharp.fluid} imgAlt="Half-Moon logo" />
               <CardBody
                 cardTitle="Half Moon Resort"
                 cardtext="Full website built, with existing ASP .NET CMS, Custom CSS, javascript and jQuery for UI for all devices."
                 linkTar="_blank"
-                linkRel="norefferer"
+                linkRel="noreferrer"
                 linkUrl="https://www.halfmoon.com/"
                 linkText="Learn More"
               />
             </CardContent>
             <CardContent>
-              <CardImage imgSrc={cardImgThree} imgAlt="Lulyboo Logo" />
+              <CardImage imgSrc={cardsArr[2].childImageSharp.fluid} imgAlt="Lulyboo Logo" />
               <CardBody
                 cardTitle="Lulyboo"
                 cardtext="Shopify website Liquid theme updates and maintenance."
                 linkTar="_blank"
-                linkRel="norefferer"
+                linkRel="noreferrer"
                 linkUrl="https://lulyboo.com/"
                 linkText="Learn More"
               />
             </CardContent>
             <CardContent>
-              <CardImage imgSrc={cardImgFour} imgAlt="Email Logo" />
+              <CardImage imgSrc={cardsArr[0].childImageSharp.fluid} imgAlt="Email Logo" />
               <CardBody
                 cardTitle="Email Templates"
                 cardtext="Creation of email template with tables to accomodate Outlook, Gmail & Yahoo users. UI across tablet and mobile devices."
                 linkTar="_blank"
-                linkRel="norefferer"
+                linkRel="noreferrer"
                 linkUrl="https://breakawaydezign.com/emails/tides.html"
                 linkText="Learn More"
               />
@@ -154,5 +153,21 @@ const Home = ( ) =>{
     </Layout>
   )
 }
+
+export const query = graphql`
+  query cardImages {
+    allFile(filter: {relativeDirectory: {eq: "cards"}}) {
+      nodes {
+        id
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+        name
+      }
+    }
+  }
+`
 
 export default Home;

@@ -78,6 +78,27 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: 'gatsby-source-mongodb',
+    //   options: {
+    //     dbName: 'myFirstDatabase',
+    //     collection: 'sample_airbnb',
+    //     server: {
+    //         address: `testcluster-shard-00-01.f1vrc.mongodb.net`,
+    //         port: 27017
+    //     },
+    //     auth: {
+    //         user: 'badtestcluster',
+    //         password: 'SimplePass123'
+    //     },
+    //     extraParams: {
+    //         replicaSet: 'testcluster-shard-00-01',
+    //         ssl: true,
+    //         authSource: 'admin',
+    //         retryWrites: true
+    //     }
+    //   }
+    // },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
