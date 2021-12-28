@@ -21,7 +21,7 @@ import heroVid from "../videos/hero_vid.mp4"
 const Home = ({ data }) =>{
   const cardsArr = data.allFile.nodes
 
-  // console.log(cardsArr);
+  console.log(cardsArr);
   return (
     <Layout className="homepage-wrap">
       <Seo />
