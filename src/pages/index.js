@@ -37,7 +37,7 @@ const Home = ({ data }) =>{
           <div className="bot">&#123; great things are here! &#125;</div>
         </div>
         <div className="linked rounded-full">
-          <a href="https://www.linkedin.com/in/the-ba-d/" target="_blank"><i className="icon-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/the-ba-d/" target="_blank" rel="noreferrer noopener"><i className="icon-linkedin"></i></a>
         </div>
       </ContainerFull>
       <ContainerFull className="about-wrap">
@@ -87,12 +87,12 @@ const Home = ({ data }) =>{
           <CardContent>
               <CardImage imgSrc={cardsArr[1].childImageSharp.fluid} imgAlt="Illinois Derm Logo" />
               <CardBody
-                cardTitle={`Illinois Dermatology Inst. Coming Soon`}
-                cardtext=""
-                // linkTar="_blank"
-                // linkRel="noreferrer"
-                // linkUrl="/emails/tides.html"
-                // linkText="Learn More"
+                cardTitle={`Illinois Dermatology Inst.`}
+                cardtext="A superlightweight Wordpress Theme with Webpack, bringing to Life Speed & Performance into one."
+                linkTar="_blank"
+                linkRel="noreferrer noopener"
+                linkUrl="https://www.illinoisderm.com/"
+                linkText="Learn More"
               />
             </CardContent>
             <CardContent>
@@ -101,7 +101,7 @@ const Home = ({ data }) =>{
                 cardTitle="Twist &amp; Shout Events"
                 cardtext="Previous Wordpress site build migrated to Squarespace for a better UX for the client backend. Full build."
                 linkTar="_blank"
-                linkRel="noreferrer"
+                linkRel="noreferrer noopener"
                 linkUrl="https://twistandshoutevents.com/"
                 linkText="Learn More"
               />
@@ -112,7 +112,7 @@ const Home = ({ data }) =>{
                 cardTitle="Half Moon Resort"
                 cardtext="Full website built, with existing ASP .NET CMS, Custom CSS, javascript and jQuery for UI for all devices."
                 linkTar="_blank"
-                linkRel="noreferrer"
+                linkRel="noreferrer noopener"
                 linkUrl="https://www.halfmoon.com/"
                 linkText="Learn More"
               />
@@ -123,7 +123,7 @@ const Home = ({ data }) =>{
                 cardTitle="Lulyboo"
                 cardtext="Shopify website Liquid theme updates and maintenance."
                 linkTar="_blank"
-                linkRel="noreferrer"
+                linkRel="noreferrer noopener"
                 linkUrl="https://lulyboo.com/"
                 linkText="Learn More"
               />
@@ -134,7 +134,7 @@ const Home = ({ data }) =>{
                 cardTitle="Email Templates"
                 cardtext="Creation of email template with tables to accomodate Outlook, Gmail & Yahoo users. UI across tablet and mobile devices."
                 linkTar="_blank"
-                linkRel="noreferrer"
+                linkRel="noreferrer noopener"
                 linkUrl="https://breakawaydezign.com/emails/tides.html"
                 linkText="Learn More"
               />
