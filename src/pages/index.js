@@ -21,7 +21,7 @@ import heroVid from "../videos/hero_vid.mp4"
 const Home = ({ data }) =>{
   const cardsArr = data.allFile.nodes
 
-  // console.log(cardsArr[0].childImageSharp.fluid);
+  console.log(cardsArr);
   return (
     <Layout className="homepage-wrap">
       <Seo />
@@ -85,7 +85,7 @@ const Home = ({ data }) =>{
           </div>
           <CardWrap>
           <CardContent>
-              <CardImage imgSrc={cardsArr[1].childImageSharp.fluid} imgAlt="Illinois Derm Logo" />
+              <CardImage imgSrc={cardsArr[3].childImageSharp.fluid} imgAlt="Illinois Derm Logo" />
               <CardBody
                 cardTitle={`Illinois Dermatology Inst.`}
                 cardtext="A superlightweight Wordpress Theme with Webpack, bringing to Life Speed & Performance into one."
@@ -96,7 +96,7 @@ const Home = ({ data }) =>{
               />
             </CardContent>
             <CardContent>
-              <CardImage imgSrc={cardsArr[3].childImageSharp.fluid} imgAlt="Twist &amp; Shout logo" />
+              <CardImage imgSrc={cardsArr[2].childImageSharp.fluid} imgAlt="Twist &amp; Shout logo" />
               <CardBody
                 cardTitle="Twist &amp; Shout Events"
                 cardtext="Previous Wordpress site build migrated to Squarespace for a better UX for the client backend. Full build."
@@ -118,7 +118,7 @@ const Home = ({ data }) =>{
               />
             </CardContent>
             <CardContent>
-              <CardImage imgSrc={cardsArr[2].childImageSharp.fluid} imgAlt="Lulyboo Logo" />
+              <CardImage imgSrc={cardsArr[1].childImageSharp.fluid} imgAlt="Lulyboo Logo" />
               <CardBody
                 cardTitle="Lulyboo"
                 cardtext="Shopify website Liquid theme updates and maintenance."
